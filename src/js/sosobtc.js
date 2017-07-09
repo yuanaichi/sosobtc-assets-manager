@@ -48,13 +48,29 @@ $('#default_market_tabs-pane-custom > .bottom .currency_item').click(function() 
   }
 });
 
-var storagePrefix = "_assets_";
+var storageKey = "_assets_manager";
 var saveAssetNumber = function(assetId, number) {
-  localStorage[storagePrefix + assetId] = number;
+  var assets = getAssetJson();
+  assets[assetId] = number;
+  localStorage[storageKey] = JSON.stringify(assets);
 };
 
+var getAssetJson = function() {
+  var assetsJson = localStorage.getItem(storageKey);
+  if (assetsJson == null) {
+      return {};
+  } else {
+    try {
+      assets = JSON.parse(assetsJson);
+    } catch(e) {
+      assets = {};
+    }
+    return assets;
+  }
+}
+
 var getAssetNumber = function(assetId) {
-  return localStorage.getItem(storagePrefix + assetId) || 0;
+  return getAssetJson()[assetId] || 0;
 };
 
 var enableAssetsManager = function() {

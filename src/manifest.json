@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "sosobtc assets manager",
     "description": "This extension change the sosobtc become a assets manager",
-    "version": "1.0",
+    "version": "1.1",
     "author": "yuanchao",
     "homepage_url": "https://github.com/yuanaichi/sosobtc-assets-manager",
     "background": {
