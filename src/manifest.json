@@ -4,7 +4,7 @@
     "description": "This extension change the sosobtc become a assets manager",
     "version": "1.0",
     "author": "yuanchao",
-    "homepage_url": [""],
+    "homepage_url": "https://github.com/yuanaichi/sosobtc-assets-manager",
     "background": {
       "scripts": ["background.js"],
       "persistent": false
