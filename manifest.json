@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "sosobtc assets manager",
+    "description": "This extension change the sosobtc become a assets manager",
+    "version": "1.0",
+    "author": "yuanchao",
+    "homepage_url": [""],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_title": "Click to toggle assets manager!"
+    },
+    "content_scripts": [{
+      "matches": ["https://www.sosobtc.com/"],
+      "js": ["js/jquery.min.js", "js/sosobtc.js"],
+      "css": ["css/sosobtc.css"]
+    }],
+    "options_page": "options.html",
+    "permissions": [
+      "https://www.sosobtc.com/"
+    ]
+}

@@ -1,0 +1,29 @@
+body {
+}
+
+.asset-manger .thwvGmgowNT6nkVDOAvTm {
+  display: none;
+}
+
+.asset-manger ._3QGExTshWJ53K_WZIr05vm {
+  width: 100% !important;
+}
+
+
+.asset-manger #default_market_tabs-pane-custom table td.number-td {
+  padding: 0;
+}
+
+.asset-manger #default_market_tabs-pane-custom table input {
+  width: 10em;
+  height: 34px;
+  padding: 3px 2px;
+  border: 0px;
+  border-bottom: 1px solid #ddd;
+  text-align: right;
+}
+
+.asset-manger #asset-total-amount {
+  font-size: 18px;
+  color: red;
+}
