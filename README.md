@@ -22,3 +22,7 @@ on开启
 ![sosobtc-assets-manager](screenshot/chrome-extension1.png)
 
 打开sosobtc就可以在自定义资产表格里面添加 资产的数量了， 在表格下方显示资产的总价
+
+
+##todo
+由于sosobtc使用了react 有些地方处理的可能不太好， sosobtc升级后可能有影响
