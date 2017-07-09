@@ -1,12 +1,12 @@
 ## 简介
 这是一个chrome 浏览器扩展， 将sosobtc变成一个数字资产管理器
 
-![sosobtc-assets-manager](screenshot/1.ong)
+![sosobtc-assets-manager](https://github.com/yuanaichi/sosobtc-assets-manager/blob/master/screenshot/1.png?raw=true)
 
 ## 如何安装
 在chrome 浏览器 地址栏输入chrome://extensions 打开扩展管理
 将sosobtc-assets-manager.crx文件拖到这里 浏览器就提示是否安装扩展
-![sosobtc-assets-manager](screenshot/chrome-extension2.ong)
+![sosobtc-assets-manager](screenshot/chrome-extension2.png)
 
 
 ## 如何使用
