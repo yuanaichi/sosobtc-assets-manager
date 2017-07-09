@@ -33,3 +33,8 @@ on开启
 
 ## todo
 由于sosobtc使用了react 有些地方处理的可能不太好， sosobtc升级后可能有影响
+
+## 支持我
+欢迎捐赠做更好的产品 O(∩_∩)O~~
+
+ETH收款： 0x002B58115C0B9232D7b466cee8e3A7bD84d28cA4
