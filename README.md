@@ -14,7 +14,9 @@
 图标下面徽标显示扩展是否开启
 
 off关闭
+
 ![sosobtc-assets-manager](screenshot/chrome-extension0.png)
 
 on开启
+
 ![sosobtc-assets-manager](screenshot/chrome-extension1.png)
