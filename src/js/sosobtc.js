@@ -75,7 +75,6 @@ var enableAssetsManager = function() {
       }).on('blur', function() {
         var assetId = $(this).parents("tr").find(".market_name").text();
         var number = $(this).val();
-        console.log(assetId + " save number:", number);
         saveAssetNumber(assetId, number);
         calcRowTotalAmount($(this).parents('tr'));
         calcAssetTotalAmount();
@@ -110,22 +109,17 @@ chrome.runtime.sendMessage({method: "getState"}, function(response) {
   if (sosoAssetEnabled) {
     //enable assets manager
     enableAssetsManager();
-
     $(function() {
       $('body').addClass('asset-manger');
       $(document).on('DOMNodeInserted', '#default_market_tabs-pane-custom', function(e) {
-        console.log(e);
         if (e.target == $('#default_market_tabs-pane-custom')[0]) {
           enableAssetsManager();
         }
       });
-
       $(document).on('DOMCharacterDataModified', '#default_market_tabs-pane-custom .latest .main', function(e) {
-        console.log(e, e.target);
         calcRowTotalAmount($(this).parents('tr'));
         calcAssetTotalAmount();
       });
     });
-
   }
 });
