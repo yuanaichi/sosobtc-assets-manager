@@ -4,13 +4,15 @@
 ![sosobtc-assets-manager](screenshot/1.png)
 
 ## 如何安装
-chrome商店安装需要翻墙
+### chrome商店安装（需要翻墙）
 
 https://chrome.google.com/webstore/detail/sosobtc-assets-manager/bklkpbghfagofkbgapljhjdffpamcddi
 
-在chrome 浏览器 地址栏输入chrome://extensions 打开扩展管理
+### 本地安装
 
-将sosobtc-assets-manager.crx文件拖到这里 浏览器就提示是否安装扩展
+在chrome浏览器地址栏输入chrome://extensions 打开扩展管理
+
+下载 [sosobtc-assets-manager.crx](https://github.com/yuanaichi/sosobtc-assets-manager/raw/master/sosobtc-assets-manager.crx) 文件拖到扩展管理器里面， 浏览器就提示是否安装扩展
 
 ![sosobtc-assets-manager](screenshot/chrome-extension2.png)
 
