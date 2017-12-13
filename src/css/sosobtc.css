@@ -10,11 +10,11 @@ body {
 }
 
 
-.asset-manger #default_market_tabs-pane-custom table td.number-td {
+.asset-manger #default_market_tabs-pane-watchlist table td.number-td {
   padding: 0;
 }
 
-.asset-manger #default_market_tabs-pane-custom table input {
+.asset-manger #default_market_tabs-pane-watchlist table input {
   width: 10em;
   height: 34px;
   padding: 3px 2px;

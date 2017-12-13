@@ -14,12 +14,12 @@
         "default_title": "Click to toggle assets manager!"
     },
     "content_scripts": [{
-      "matches": ["https://www.sosobtc.com/"],
+      "matches": ["https://www.aicoin.net.cn/"],
       "js": ["js/jquery.min.js", "js/sosobtc.js"],
       "css": ["css/sosobtc.css"]
     }],
     "options_page": "options.html",
     "permissions": [
-      "https://www.sosobtc.com/"
+      "https://www.aicoin.net.cn/"
     ]
 }

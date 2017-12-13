@@ -75,11 +75,11 @@ var getAssetNumber = function(assetId) {
 
 var enableAssetsManager = function() {
   $(function() {
-    $('#default_market_tabs-pane-custom > table').addClass('with-assets');
-    $('#default_market_tabs-pane-custom > table > thead > tr').append('<th>数量</th><th>总金额</th>');
-    $('#default_market_tabs-pane-custom > .bottom').append('<span class="item">总金额：<span id="asset-total-amount">0</span></span>');
+    $('#default_market_tabs-pane-watchlist > table').addClass('with-assets');
+    $('#default_market_tabs-pane-watchlist > table > thead > tr').append('<th>数量</th><th>总金额</th>');
+    $('#default_market_tabs-pane-watchlist > .bottom').append('<span class="item">总金额：<span id="asset-total-amount">0</span></span>');
 
-    $('#default_market_tabs-pane-custom > table > tbody > tr').each(function(item) {
+    $('#default_market_tabs-pane-watchlist > table > tbody > tr').each(function(item) {
       var assetId = $(this).find(".market_name").text();
       var assetNumber = getAssetNumber(assetId);
       $(this).append('<td class="number-td"><input type="number" class="number" name="number" value="' + assetNumber + '"/></td><td class="total-amount" data-amount="0"></td>');
@@ -113,7 +113,7 @@ var calcRowTotalAmount = function(row) {
 
 var calcAssetTotalAmount = function() {
   var total = 0;
-  $('#default_market_tabs-pane-custom > table > tbody > tr').each(function(item) {
+  $('#default_market_tabs-pane-watchlist > table > tbody > tr').each(function(item) {
     total += parseFloat($(this).find(".total-amount").attr("data-amount"));
   });
 
@@ -127,12 +127,12 @@ chrome.runtime.sendMessage({method: "getState"}, function(response) {
     enableAssetsManager();
     $(function() {
       $('body').addClass('asset-manger');
-      $(document).on('DOMNodeInserted', '#default_market_tabs-pane-custom', function(e) {
+      $(document).on('DOMNodeInserted', '#default_market_tabs-pane-watchlist', function(e) {
         if (e.target == $('#default_market_tabs-pane-custom')[0]) {
           enableAssetsManager();
         }
       });
-      $(document).on('DOMCharacterDataModified', '#default_market_tabs-pane-custom .latest .main', function(e) {
+      $(document).on('DOMCharacterDataModified', '#default_market_tabs-pane-watchlist .latest .main', function(e) {
         calcRowTotalAmount($(this).parents('tr'));
         calcAssetTotalAmount();
       });
