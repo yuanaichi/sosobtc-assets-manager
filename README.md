@@ -1,5 +1,6 @@
 ## 简介
 这是一个chrome 浏览器扩展， 将sosobtc变成一个数字资产管理器
+已经支持 aicoin
 
 ![sosobtc-assets-manager](screenshot/1.png)
 
